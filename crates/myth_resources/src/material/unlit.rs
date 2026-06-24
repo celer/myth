@@ -13,6 +13,10 @@ pub struct UnlitMaterial {
     #[uniform(default = "1.0")]
     pub opacity: f32,
 
+    /// Dynamic extrusion thickness (0.0 to disable).
+    #[uniform(default = "0.0")]
+    pub extrusion: f32,
+
     /// Alpha test threshold.
     #[uniform]
     pub alpha_test: f32,
